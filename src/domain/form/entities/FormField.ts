@@ -19,10 +19,10 @@ export abstract class FormField extends Entity<FieldId> {
     protected isRequired: boolean,
     // protected validationRules: ValidationRule[],
   ) {
-    super(id)
+    super(id);
   }
 
-  abstract getType(): FieldType
+  abstract getType(): FieldType;
 
   getName(): FieldName {
     return this.name;
@@ -43,12 +43,12 @@ export abstract class FormField extends Entity<FieldId> {
   updateName(name: FieldName): void {
     this.name = name;
   }
-  
+
   updateOrder(order: number): void {
-    this.order = order
+    this.order = order;
   }
 
   setRequired(required: boolean): void {
-    this.isRequired = required
+    this.isRequired = required;
   }
 }
